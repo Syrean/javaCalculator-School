@@ -91,13 +91,12 @@ public class GUI extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
+        jPanel5 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(51, 51, 51));
         setForeground(new java.awt.Color(51, 51, 51));
-        setMaximumSize(new java.awt.Dimension(560, 880));
         setMinimumSize(new java.awt.Dimension(560, 880));
-        setPreferredSize(new java.awt.Dimension(570, 910));
         setResizable(false);
         setSize(new java.awt.Dimension(560, 890));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -320,7 +319,7 @@ public class GUI extends javax.swing.JFrame {
                 floorButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(floorButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 310, 70, 70));
+        getContentPane().add(floorButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 230, 70, 70));
 
         ceilButton.setBackground(new java.awt.Color(51, 51, 51));
         ceilButton.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -331,7 +330,7 @@ public class GUI extends javax.swing.JFrame {
                 ceilButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(ceilButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 230, 70, 70));
+        getContentPane().add(ceilButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 230, 70, 70));
 
         jTextField2.setEditable(false);
         jTextField2.setBackground(new java.awt.Color(153, 153, 153));
@@ -352,7 +351,7 @@ public class GUI extends javax.swing.JFrame {
                 intButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(intButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 230, 70, 70));
+        getContentPane().add(intButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 230, 70, 70));
 
         moduloButton.setBackground(new java.awt.Color(51, 51, 51));
         moduloButton.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -564,9 +563,9 @@ public class GUI extends javax.swing.JFrame {
         getContentPane().add(factorialDivision, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 710, 110, 70));
 
         XTimesY.setBackground(new java.awt.Color(51, 51, 51));
-        XTimesY.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        XTimesY.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         XTimesY.setForeground(new java.awt.Color(255, 255, 255));
-        XTimesY.setText("x + a");
+        XTimesY.setText("x + a/y");
         XTimesY.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 XTimesYActionPerformed(evt);
@@ -577,7 +576,7 @@ public class GUI extends javax.swing.JFrame {
         XPlusY.setBackground(new java.awt.Color(51, 51, 51));
         XPlusY.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         XPlusY.setForeground(new java.awt.Color(255, 255, 255));
-        XPlusY.setText("x a");
+        XPlusY.setText("x*a/y");
         XPlusY.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 XPlusYActionPerformed(evt);
@@ -588,7 +587,7 @@ public class GUI extends javax.swing.JFrame {
         XRaisedY.setBackground(new java.awt.Color(51, 51, 51));
         XRaisedY.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         XRaisedY.setForeground(new java.awt.Color(255, 255, 255));
-        XRaisedY.setIcon(new javax.swing.ImageIcon(getClass().getResource("/calculator/expo.png"))); // NOI18N
+        XRaisedY.setIcon(new javax.swing.ImageIcon(getClass().getResource("/calculator/xc.png"))); // NOI18N
         XRaisedY.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 XRaisedYActionPerformed(evt);
@@ -621,7 +620,7 @@ public class GUI extends javax.swing.JFrame {
         XRaisedC.setBackground(new java.awt.Color(51, 51, 51));
         XRaisedC.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         XRaisedC.setForeground(new java.awt.Color(255, 255, 255));
-        XRaisedC.setIcon(new javax.swing.ImageIcon(getClass().getResource("/calculator/xc.png"))); // NOI18N
+        XRaisedC.setIcon(new javax.swing.ImageIcon(getClass().getResource("/calculator/expoC.png"))); // NOI18N
         XRaisedC.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 XRaisedCActionPerformed(evt);
@@ -655,13 +654,15 @@ public class GUI extends javax.swing.JFrame {
         getContentPane().add(functionName, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 20, -1, -1));
 
         jButton1.setBackground(new java.awt.Color(51, 51, 51));
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/calculator/dili.png"))); // NOI18N
+        jButton1.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setText("//");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 230, 70, 70));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 310, 70, 70));
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 3));
@@ -672,9 +673,10 @@ public class GUI extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(0, 0, 0));
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 520, 140));
+        getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(-30, -40, -1, -1));
 
-        jPanel4.setBackground(new java.awt.Color(51, 51, 51));
-        getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 560, 880));
+        jPanel5.setBackground(new java.awt.Color(51, 51, 51));
+        getContentPane().add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 560, 880));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -804,6 +806,10 @@ public class GUI extends javax.swing.JFrame {
             result = num1 % num2;
             jTextField1.setText(Double.toString(result));
             jTextField2.setText("");
+        } else if (opr =="//") {
+            double quo = num1 / num2;
+            result = Math.floor(quo);
+            jTextField1.setText(Double.toString(result));
         }
     }//GEN-LAST:event_equalsActionPerformed
 
@@ -862,8 +868,14 @@ public class GUI extends javax.swing.JFrame {
         // TODO add your handling code here:
         num1 = Double.parseDouble(jTextField1.getText());
 
-        int integer = (int) Math.floor(num1);
-        jTextField1.setText(String.valueOf(integer));
+        if(num1 < 0){
+        int integer = (int) Math.ceil(num1);
+          jTextField1.setText(String.valueOf(integer));
+        }else if (num1 > 0){
+         int integer = (int) Math.floor(num1);
+           jTextField1.setText(String.valueOf(integer));
+        }
+ 
     }//GEN-LAST:event_intButtonActionPerformed
 
     private void moduloButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_moduloButtonActionPerformed
@@ -882,21 +894,31 @@ public class GUI extends javax.swing.JFrame {
         double product = 1;
         if (num1 < 0) {
             jTextField1.setText("Invalid Number");
-        } else {
+        }else if (num1 == 0){
+            jTextField1.setText("1");
+        } 
+        else {
             for (double i = num1; i > 0; i--) {
                 product = product * i;
                 jTextField1.setText(Double.toString(product));
             }
 
-        }
+        } 
     }//GEN-LAST:event_factorialButtonActionPerformed
 
     private void squareRootActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_squareRootActionPerformed
         // TODO add your handling code here:
         num1 = Double.parseDouble(jTextField1.getText());
 
-        double integer = Math.sqrt(num1);
-        jTextField1.setText(String.valueOf(integer));
+        
+        if (num1 > 0){
+            double integer = Math.sqrt(num1);
+            jTextField1.setText(String.valueOf(integer));
+        }else if (num1 <0){
+            jTextField1.setText("Syntax Error");
+        }
+            
+        
     }//GEN-LAST:event_squareRootActionPerformed
 
     private void SummationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SummationActionPerformed
@@ -1044,14 +1066,23 @@ public class GUI extends javax.swing.JFrame {
     private void logTwoXActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logTwoXActionPerformed
 
         double result = Math.log(a) / Math.log(2);
-
+        
         jTextField1.setText(String.valueOf(result));
     }//GEN-LAST:event_logTwoXActionPerformed
 
     private void logXActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logXActionPerformed
-        double result = Math.log(a) / Math.log(10);
-
+        double res1 = Math.log(a) / Math.log(10);
+        
+        if(res1 > 0 ){
+        result = Math.ceil(res1);
+        
         jTextField1.setText(String.valueOf(result));
+        } else if (res1 < 0){
+        result = Math.floor(res1);
+        
+        jTextField1.setText(String.valueOf(result));
+        }
+        
     }//GEN-LAST:event_logXActionPerformed
 
     private void cubeRootActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cubeRootActionPerformed
@@ -1083,20 +1114,22 @@ public class GUI extends javax.swing.JFrame {
     private void XYZActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_XYZActionPerformed
         double num1 = Double.parseDouble(jTextField1.getText());
 
-        double result = (Math.pow(num1, Math.pow(a, b)));
+        int res = (int)(Math.pow(num1, Math.pow(a, b)));
 
-        jTextField1.setText(String.valueOf(result));
+        
+        
+        jTextField1.setText(String.valueOf(res));
     }//GEN-LAST:event_XYZActionPerformed
 
     private void doubleSummationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_doubleSummationActionPerformed
         double sum = 0;
 
-        double x = Double.parseDouble(jTextField1.getText());
+      
 
         if (function == "xa") {
             for (double i = a; i <= b; i++) {
                 for (double n = c; n <= d; n++) {
-                    double term = x * i;
+                    double term = n * i;
                     sum = sum + term;
                 }
             }
@@ -1104,7 +1137,7 @@ public class GUI extends javax.swing.JFrame {
         } else if (function == "x+a") {
             for (double i = a; i <= b; i++) {
                 for (double n = c; n <= d; n++) {
-                    double term = x + i;
+                    double term = n + i;
                     sum = sum + term;
                 }
             }
@@ -1112,7 +1145,7 @@ public class GUI extends javax.swing.JFrame {
         } else if (function == "x^a") {
             for (double i = a; i <= b; i++) {
                 for (double n = c; n <= d; n++) {
-                    double term = Math.pow(x, i);
+                    double term = Math.pow(n, i);
                     sum = sum + term;
                 }
             }
@@ -1120,7 +1153,7 @@ public class GUI extends javax.swing.JFrame {
         } else if (function == "Cx") {
             for (double i = a; i <= b; i++) {
                 for (double n = c; n <= d; n++) {
-                    double term = n * x;
+                    double term = n * i;
                     sum = sum + term;
                 }
             }
@@ -1128,7 +1161,7 @@ public class GUI extends javax.swing.JFrame {
         } else if (function == "x+C") {
             for (double i = a; i <= b; i++) {
                 for (double n = c; n <= d; n++) {
-                    double term = x + n;
+                    double term = i + n;
                     sum = sum + term;
                 }
             }
@@ -1136,7 +1169,7 @@ public class GUI extends javax.swing.JFrame {
         } else if (function == "x^C") {
             for (double i = a; i <= b; i++) {
                 for (double n = c; n <= d; n++) {
-                    double term = Math.pow(x, n);
+                    double term = Math.pow(i, n);
                     sum = sum + term;
                 }
             }
@@ -1176,12 +1209,11 @@ public class GUI extends javax.swing.JFrame {
         double product = 1;
         double term = 0;
 
-        double x = Double.parseDouble(jTextField1.getText());
 
         if (function == "xa") {
             for (double i = a; i <= b; i++) {
                 for (double n = c; n <= d; n++) {
-                    term = x * i;
+                    term = n * i;
                     product = product * term;
                 }
             }
@@ -1189,7 +1221,7 @@ public class GUI extends javax.swing.JFrame {
         } else if (function == "x+a") {
             for (double i = a; i <= b; i++) {
                 for (double n = c; n <= d; n++) {
-                    term = x + i;
+                    term = n + i;
                     product = product * term;
                 }
             }
@@ -1197,7 +1229,7 @@ public class GUI extends javax.swing.JFrame {
         } else if (function == "x^a") {
             for (double i = a; i <= b; i++) {
                 for (double n = c; n <= d; n++) {
-                    term = Math.pow(x, i);
+                    term = Math.pow(n, i);
                     product = product * term;
                 }
             }
@@ -1208,7 +1240,7 @@ public class GUI extends javax.swing.JFrame {
                 term = 1;
                 if (condition != i) {
                     for (double n = c; n <= d; n++) {
-                        term = n * x;
+                        term = n * i;
                     }
                 }
                 product = product * term;
@@ -1220,7 +1252,7 @@ public class GUI extends javax.swing.JFrame {
                 term = 1;
                 if (condition != i) {
                     for (double n = c; n <= d; n++) {
-                        term = n + x;
+                        term = n + i;
                     }
                 }
                 product = product * term;
@@ -1232,7 +1264,7 @@ public class GUI extends javax.swing.JFrame {
                 term = 1;
                 if (condition != i) {
                     for (double n = c; n <= d; n++) {
-                        term = Math.pow(x, n);
+                        term = Math.pow(i, n);
                     }
                 }
                 product = product * term;
@@ -1243,7 +1275,11 @@ public class GUI extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        jTextField1.setText(jTextField1.getText() + "We are the Diligent Decoders");
+        num1 = Double.parseDouble(jTextField1.getText());
+
+        jTextField1.setText("");
+
+        opr = "//";
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -1323,6 +1359,7 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JButton logTwoX;
