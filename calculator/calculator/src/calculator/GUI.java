@@ -54,7 +54,6 @@ public class GUI extends javax.swing.JFrame {
         equals = new javax.swing.JButton();
         floorButton = new javax.swing.JButton();
         ceilButton = new javax.swing.JButton();
-        jTextField2 = new javax.swing.JTextField();
         intButton = new javax.swing.JButton();
         moduloButton = new javax.swing.JButton();
         factorialButton = new javax.swing.JButton();
@@ -91,7 +90,10 @@ public class GUI extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
-        jPanel5 = new javax.swing.JPanel();
+        jButton2 = new javax.swing.JButton();
+        jPanel7 = new javax.swing.JPanel();
+        jPanel8 = new javax.swing.JPanel();
+        jPanel9 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(51, 51, 51));
@@ -332,16 +334,6 @@ public class GUI extends javax.swing.JFrame {
         });
         getContentPane().add(ceilButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 230, 70, 70));
 
-        jTextField2.setEditable(false);
-        jTextField2.setBackground(new java.awt.Color(153, 153, 153));
-        jTextField2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 140, 40));
-
         intButton.setBackground(new java.awt.Color(51, 51, 51));
         intButton.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         intButton.setForeground(new java.awt.Color(255, 255, 255));
@@ -472,7 +464,7 @@ public class GUI extends javax.swing.JFrame {
                 setActionPerformed(evt);
             }
         });
-        getContentPane().add(set, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 630, 280, 70));
+        getContentPane().add(set, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 630, 170, 70));
 
         aButton.setBackground(new java.awt.Color(51, 51, 51));
         aButton.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -527,7 +519,7 @@ public class GUI extends javax.swing.JFrame {
                 logTwoXActionPerformed(evt);
             }
         });
-        getContentPane().add(logTwoX, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 630, 110, 70));
+        getContentPane().add(logTwoX, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 630, 110, 70));
 
         logX.setBackground(new java.awt.Color(51, 51, 51));
         logX.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -538,7 +530,7 @@ public class GUI extends javax.swing.JFrame {
                 logXActionPerformed(evt);
             }
         });
-        getContentPane().add(logX, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 630, 110, 70));
+        getContentPane().add(logX, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 630, 110, 70));
 
         factorialAddition.setBackground(new java.awt.Color(51, 51, 51));
         factorialAddition.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -668,15 +660,35 @@ public class GUI extends javax.swing.JFrame {
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 3));
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 10, 340, 60));
 
-        jPanel3.setBackground(new java.awt.Color(0, 0, 0));
-        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 140, 40));
+        jPanel3.setBackground(new java.awt.Color(30, 33, 29));
+        jPanel3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 2, true));
+        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 20, 40, 40));
 
         jPanel2.setBackground(new java.awt.Color(0, 0, 0));
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 520, 140));
         getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(-30, -40, -1, -1));
 
-        jPanel5.setBackground(new java.awt.Color(51, 51, 51));
-        getContentPane().add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 560, 880));
+        jButton2.setBackground(new java.awt.Color(51, 51, 51));
+        jButton2.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
+        jButton2.setText("a! * b!");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 630, 110, 70));
+
+        jPanel7.setBackground(new java.awt.Color(30, 33, 29));
+        jPanel7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 2, true));
+        getContentPane().add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 40, 40));
+
+        jPanel8.setBackground(new java.awt.Color(30, 33, 29));
+        jPanel8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 2, true));
+        getContentPane().add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, 40, 40));
+
+        jPanel9.setBackground(new java.awt.Color(51, 51, 51));
+        getContentPane().add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 560, 880));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -805,7 +817,6 @@ public class GUI extends javax.swing.JFrame {
         } else if (opr == "mod") {
             result = num1 % num2;
             jTextField1.setText(Double.toString(result));
-            jTextField2.setText("");
         } else if (opr =="//") {
             double quo = num1 / num2;
             result = Math.floor(quo);
@@ -816,7 +827,6 @@ public class GUI extends javax.swing.JFrame {
     private void EquationClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EquationClearActionPerformed
         // TODO add your handling code here:
         jTextField1.setText("");
-        jTextField2.setText("");
         aLabel.setText("A = 0");
         bLabel.setText("B = 0");
         cLabel.setText("C = 0");
@@ -880,7 +890,6 @@ public class GUI extends javax.swing.JFrame {
 
     private void moduloButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_moduloButtonActionPerformed
         // TODO add your handling code here:
-        jTextField2.setText(jTextField2.getText() + "%");
 
         num1 = Double.parseDouble(jTextField1.getText());
         jTextField1.setText("");
@@ -990,10 +999,6 @@ public class GUI extends javax.swing.JFrame {
         functionName.setText("Function: x + C");
         function = "x+C";
     }//GEN-LAST:event_XPlusCActionPerformed
-
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
 
     private void XTimesYActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_XTimesYActionPerformed
         functionName.setText("Function: x + a");
@@ -1288,6 +1293,31 @@ public class GUI extends javax.swing.JFrame {
         opr = "//";
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+         double resultFactorialA = 0;
+        double resultFactorialB = 0;
+        double resultFactorial = 0;
+        if (a != 0 && b != 0) {
+            resultFactorialA = factorial(a);
+            resultFactorialB = factorial(b);
+
+            resultFactorial = resultFactorialA * resultFactorialB;
+
+            jTextField1.setText(String.valueOf(resultFactorial));
+        } else if (a == 0 && b != 0) {
+            resultFactorialB = factorial(b);
+
+            jTextField1.setText(String.valueOf(resultFactorialB));
+        } else if (a != 0 && b == 0) {
+            resultFactorialA = factorial(a);
+
+            jTextField1.setText(String.valueOf(resultFactorialA));
+        } else {
+            jTextField1.setText("");
+        }
+    }//GEN-LAST:event_jButton2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1361,13 +1391,15 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JLabel functionName;
     private javax.swing.JButton intButton;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel7;
+    private javax.swing.JPanel jPanel8;
+    private javax.swing.JPanel jPanel9;
     private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
     private javax.swing.JButton logTwoX;
     private javax.swing.JButton logX;
     private javax.swing.JButton minus;
