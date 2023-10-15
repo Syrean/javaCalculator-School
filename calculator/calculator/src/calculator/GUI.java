@@ -1201,6 +1201,12 @@ public class GUI extends javax.swing.JFrame {
                 product = product * term;
             }
             jTextField1.setText(String.valueOf(product));
+        }else if (function == "x^C") {
+            for (double i = a; i <= b; i++) {
+                double term = Math.pow(i, x);
+                product = product * term;
+            }
+            jTextField1.setText(String.valueOf(product));
         }
 
     }//GEN-LAST:event_productActionPerformed
