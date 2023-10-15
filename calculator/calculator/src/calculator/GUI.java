@@ -228,7 +228,7 @@ public class GUI extends javax.swing.JFrame {
         getContentPane().add(six, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 390, 70, 70));
 
         multiply.setBackground(new java.awt.Color(102, 102, 102));
-        multiply.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        multiply.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         multiply.setText("x");
         multiply.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -292,7 +292,7 @@ public class GUI extends javax.swing.JFrame {
         getContentPane().add(zero, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 550, 70, 70));
 
         point.setBackground(new java.awt.Color(102, 102, 102));
-        point.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        point.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         point.setText(".");
         point.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -302,7 +302,7 @@ public class GUI extends javax.swing.JFrame {
         getContentPane().add(point, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 550, 70, 70));
 
         equals.setBackground(new java.awt.Color(0, 204, 204));
-        equals.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        equals.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         equals.setText("=");
         equals.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -522,7 +522,7 @@ public class GUI extends javax.swing.JFrame {
         logTwoX.setBackground(new java.awt.Color(51, 51, 51));
         logTwoX.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         logTwoX.setForeground(new java.awt.Color(255, 255, 255));
-        logTwoX.setText("log ₂ x");
+        logTwoX.setText("log ₂ a");
         logTwoX.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 logTwoXActionPerformed(evt);
@@ -533,7 +533,7 @@ public class GUI extends javax.swing.JFrame {
         logX.setBackground(new java.awt.Color(51, 51, 51));
         logX.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         logX.setForeground(new java.awt.Color(255, 255, 255));
-        logX.setText("log x");
+        logX.setText("log a");
         logX.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 logXActionPerformed(evt);
@@ -566,7 +566,7 @@ public class GUI extends javax.swing.JFrame {
         XTimesY.setBackground(new java.awt.Color(51, 51, 51));
         XTimesY.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         XTimesY.setForeground(new java.awt.Color(255, 255, 255));
-        XTimesY.setText("x + y");
+        XTimesY.setText("x + a");
         XTimesY.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 XTimesYActionPerformed(evt);
@@ -577,7 +577,7 @@ public class GUI extends javax.swing.JFrame {
         XPlusY.setBackground(new java.awt.Color(51, 51, 51));
         XPlusY.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         XPlusY.setForeground(new java.awt.Color(255, 255, 255));
-        XPlusY.setText("x y");
+        XPlusY.setText("x a");
         XPlusY.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 XPlusYActionPerformed(evt);
@@ -588,7 +588,7 @@ public class GUI extends javax.swing.JFrame {
         XRaisedY.setBackground(new java.awt.Color(51, 51, 51));
         XRaisedY.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         XRaisedY.setForeground(new java.awt.Color(255, 255, 255));
-        XRaisedY.setIcon(new javax.swing.ImageIcon(getClass().getResource("/calculator/xc.png"))); // NOI18N
+        XRaisedY.setIcon(new javax.swing.ImageIcon(getClass().getResource("/calculator/expo.png"))); // NOI18N
         XRaisedY.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 XRaisedYActionPerformed(evt);
@@ -632,17 +632,17 @@ public class GUI extends javax.swing.JFrame {
         aLabel.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
         aLabel.setForeground(new java.awt.Color(255, 255, 255));
         aLabel.setText("A = 0");
-        getContentPane().add(aLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 20, 50, 50));
+        getContentPane().add(aLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 20, 70, 50));
 
         bLabel.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
         bLabel.setForeground(new java.awt.Color(255, 255, 255));
         bLabel.setText("B = 0");
-        getContentPane().add(bLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 20, 50, 50));
+        getContentPane().add(bLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 20, 80, 50));
 
         cLabel.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
         cLabel.setForeground(new java.awt.Color(255, 255, 255));
         cLabel.setText("C = 0");
-        getContentPane().add(cLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 20, 50, 50));
+        getContentPane().add(cLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 20, 80, 50));
 
         dLabel.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
         dLabel.setForeground(new java.awt.Color(255, 255, 255));
@@ -665,7 +665,7 @@ public class GUI extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 3));
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 10, 330, 60));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 10, 340, 60));
 
         jPanel3.setBackground(new java.awt.Color(0, 0, 0));
         getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 140, 40));
@@ -697,6 +697,9 @@ public class GUI extends javax.swing.JFrame {
         num1 = Double.parseDouble(jTextField1.getText());
 
         if (num1 > 0) {
+            result = num1 * -1;
+            jTextField1.setText(Double.toString(result));
+        }else if (num1 < 0){
             result = num1 * -1;
             jTextField1.setText(Double.toString(result));
         }
